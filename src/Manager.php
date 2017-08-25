@@ -34,11 +34,13 @@ class Manager {
      * 
      * @var string $botApiKey
      * @var string $channelName
+     * @var string|null $botName
      */
-    function __construct($botApiKey, $channelName, $botName)
+    function __construct($botApiKey, $channelName, $botName = null)
     {
         $this->botApiKey = $botApiKey;
         $this->channelName = $channelName;
+        $this->botName = $botName;
 
         $this->telegramClient = new Telegram($this->botApiKey);
     }
