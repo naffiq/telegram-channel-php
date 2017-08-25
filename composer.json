@@ -1,0 +1,24 @@
+{
+    "name": "naffiq/telegram-php-channel",
+    "description": "Post to your telegram channel with ease!",
+    "type": "library",
+    "require": {
+        "longman/telegram-bot": "^0.47.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "naffiq",
+            "email": "abdu.galymzhan@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "naffiq\\telegram\\channel\\": "src/"
+        }
+    }
+}
