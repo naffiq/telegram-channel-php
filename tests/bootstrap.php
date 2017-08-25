@@ -1,6 +1,6 @@
 <?php 
 
-if (implode(DIRECTORY_SEPARATOR, [__DIR__, '..', '.env'])) {
+if (file_exists(implode(DIRECTORY_SEPARATOR, [__DIR__, '..', '.env']))) {
     $dotenv = new Dotenv\Dotenv(__DIR__ . DIRECTORY_SEPARATOR . '..');
     $dotenv->load();
 }
