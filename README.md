@@ -18,11 +18,22 @@ $ composer require naffiq/telegram-channel-php
 2. Add it as an admin to your channel
 3. Initialize the lib provided as follows:
 
+#### Post message
 ```php
 <?php
 
 $manager = new \naffiq\telegram\channel\Manager(BOT_TOKEN, CHANNEL_NAME);
 
 $manager->postMessage('Hello, fellas!');
+
+```
+
+#### Post photo
+```php
+<?php
+
+$manager = new \naffiq\telegram\channel\Manager(BOT_TOKEN, CHANNEL_NAME);
+
+$manager->postPhoto(__DIR__ . '/photo.jpeg');
 
 ```

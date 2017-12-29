@@ -58,4 +58,17 @@ class Manager {
             'text' => $message
         ]);
     }
+
+    /**
+     * Send photo to your telegram channel
+     *
+     * @var string $photoPath
+     */
+    public function postPhoto($photoPath)
+    {
+        return Request::sendPhoto([
+            'chat_id' => $this->channelName,
+            'photo'   => Request::encodeFile($photoPath)
+        ]);
+    }
 }
