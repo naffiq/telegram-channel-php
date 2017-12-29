@@ -16,7 +16,7 @@ $ composer require naffiq/telegram-channel-php
 
 1. Create bot via [BotFather](https://t.me/botfather) and get `BOT_TOKEN` from it
 2. Add it as an admin to your channel
-3. Initialize the lib provided as follows:
+3. Follow examples below to post messages or photos:
 
 #### Post message
 ```php
