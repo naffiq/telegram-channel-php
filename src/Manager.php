@@ -64,11 +64,12 @@ class Manager {
      *
      * @var string $photoPath
      */
-    public function postPhoto($photoPath)
+    public function postPhoto($photoPath,$caption=NULL)
     {
         return Request::sendPhoto([
             'chat_id' => $this->channelName,
-            'photo'   => Request::encodeFile($photoPath)
+            'photo'   => Request::encodeFile($photoPath),
+            'caption' => $caption
         ]);
     }
 }
