@@ -34,6 +34,6 @@ $manager->postMessage('Hello, fellas!');
 
 $manager = new \naffiq\telegram\channel\Manager(BOT_TOKEN, CHANNEL_NAME);
 
-$manager->postPhoto(__DIR__ . '/photo.jpeg');
+$manager->postPhoto(__DIR__ . '/photo.jpeg', 'Put your label here');
 
 ```
