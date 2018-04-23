@@ -26,7 +26,7 @@ class ManagerTest extends TestCase
 
         $manager = new Manager($apiToken, $channelName);
 
-        $response = $manager->postPhoto(__DIR__ . '/photo.jpeg');
+        $response = $manager->postPhoto(__DIR__ . '/photo.jpeg', 'Thats photo with label!');
 
         $this->assertInstanceOf(ServerResponse::class, $response);
         $this->assertTrue($response->ok);
